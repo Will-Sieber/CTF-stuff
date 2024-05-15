@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Theme</title>
+    <link rel="stylesheet" type="text/css" href="{{ href }}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Welcome to the Website</h1>
+            <p>This is a simple yet stylish website theme.</p>
+            <p>Check out some new css elements below</p>
+            <hr>
+            <p><i>Bear in mind this is a work in progress</i></p>
+            <hr>
+            <div>
+                <form method="POST" action="/">
+                    <input type="text" name="path">
+                    <input type="submit">
+                </form>
+            </div>
+            <hr>
+            <div>
+                <p>{{ output|safe }}</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Website Theme © 2024</p>
+    </footer>
+</body>
+
+</html>
